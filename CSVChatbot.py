@@ -38,7 +38,7 @@ uploaded_file = st.file_uploader("Upload a CSV file for analysis", type=['csv'])
 
 
 # create an LLM by instantiating OpenAI object, and passing API token
-llm = OpenAI(api_token=openai_api_key)
+llm = OpenAI(api_token=OPENAI_API_KEY)
 
 # create PandasAI object, passing the LLM
 pandas_ai = PandasAI(llm)
