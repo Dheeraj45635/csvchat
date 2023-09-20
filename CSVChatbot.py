@@ -1,17 +1,11 @@
 import streamlit as st 
 from pandasai.llm.openai import OpenAI
-import os
 import pandas as pd
 import re
 from pandasai import PandasAI
 import matplotlib
 matplotlib.use('TkAgg')
 OPENAI_API_KEY = st.secrets['OPENAI_API_KEY']
-
-
-
-
-openai_api_key = os.getenv("OPENAI_API_KEY")
 
 
 def preprocess_text(text):
