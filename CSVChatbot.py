@@ -2,6 +2,7 @@ import streamlit as st
 from pandasai.llm.openai import OpenAI
 import pandas as pd
 import re
+import tkinter as tk
 from pandasai import PandasAI
 import matplotlib
 matplotlib.use('TkAgg')
